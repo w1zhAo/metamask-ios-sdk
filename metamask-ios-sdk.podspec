@@ -20,5 +20,7 @@ The iOS MetaMask SDK enables native iOS apps to interact with the Ethereum block
   
   s.vendored_frameworks = 'Sources/metamask-ios-sdk/Frameworks/Ecies.xcframework'
   s.dependency 'Starscream', '4.0.6'
-  s.dependency 'Socket.IO-Client-Swift', '~> 16.1.0'
+  s.dependency 'Socket.IO-Client-Swift'
+  
+  s.resource_bundles = {'metamask-ios-sdk' => ['Sources/metamask-ios-sdk/PrivacyInfo.xcprivacy']}
 end
